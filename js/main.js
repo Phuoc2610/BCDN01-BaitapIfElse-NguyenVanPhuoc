@@ -21,27 +21,27 @@ document.getElementById("btnNum").onclick = function () {
     console.log(a, b, c);
 
     if (a > b && b > c) {
-        console.log(c, b, a);
+        // console.log(c, b, a);
         ketQua = c + "<" + b + "<" + a;
 
     } else if (a > c && c > b) {
-        console.log(b, c, a);
+        // console.log(b, c, a);
         ketQua = b + "<" + c + "<" + a;
 
     } else if (b > a && a > c) {
-        console.log(c, a, b);
+        // console.log(c, a, b);
         ketQua = c + "<" + a + "<" + b;
 
     } else if (b > c && c > a) {
-        console.log(a, c, b);
+        // console.log(a, c, b);
         ketQua = a + "<" + c + "<" + b;
 
     } else if (c > b && b > a) {
-        console.log(a, b, c);
+        // console.log(a, b, c);
         ketQua = a + "<" + b + "<" + c;
 
     } else {
-        console.log(b, a, c);
+        // console.log(b, a, c);
         ketQua = b + "<" + a + "<" + c;
     }
     document.getElementById("txtNum").innerHTML = ketQua;
@@ -144,7 +144,7 @@ document.getElementById("btnKetQua").onclick = function () {
     var b = parseInt(document.getElementById("inputCanh2").value);
     var c = parseInt(document.getElementById("inputCanh3").value);
     var ketQua = 0;
-    console.log(a, b, c);
+    // console.log(a, b, c);
 
     if (a == b && b == c) {
         ketQua = "tam giác đều";
@@ -190,7 +190,7 @@ document.getElementById("btnDay").onclick = function () {
     var nextYear = 0;
     var lastYear = 0;
 
-    console.log(day, month, year);
+    // console.log(day, month, year);
     // if(year%4===0 && year%100!==0 && year%400!==0){
     //     console.log("năm nhuận");
     // }else{
@@ -236,7 +236,7 @@ document.getElementById("btnDay").onclick = function () {
                 nextDay = 1;
                 lastDay = 27;
                 nextMonth = 3;
-                console.log("28");
+                // console.log("28");
             }
             break;
         case 29:
@@ -245,7 +245,7 @@ document.getElementById("btnDay").onclick = function () {
                 lastDay = 28;
                 nextMonth = 3;
             }
-            console.log("29");
+            // console.log("29");
             break;
         case 30:
             if (month == 4 || month == 6 || month == 9 || month == 11) {
@@ -297,7 +297,7 @@ document.getElementById("btnDays").onclick = function () {
 
     days = 0;
 
-    console.log(month, year);
+    // console.log(month, year);
     switch (month) {
         case 2:
             if (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) {
